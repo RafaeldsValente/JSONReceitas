@@ -1,0 +1,61 @@
+{
+"Receitas":[
+  {
+    "Titulo":"Pudim de Leite Condensado",
+    "TempoPreparo":"40",
+    "Serve":20,
+    "Ingredientes":[
+      {
+        "TituloIngrediente":"1 lata de leite condensado"
+      },
+      {
+        "TituloIngrediente":"1 xícara de leite de vaca"
+      },
+      {
+        "TituloIngrediente":"4 ovos inteiros"
+      },
+      {
+        "TituloIngrediente":"1 xícara (chá) de açúcar"
+      },
+      {
+        "TituloIngrediente":"1/3 de xícara (chá) de água"
+      }
+      ]
+  },
+  {
+    "Titulo":"Mousse de Limão",
+    "TempoPreparo":"10",
+    "Serve":10,
+    "Ingredientes":[
+      {
+        "TituloIngrediente":"1 lata de leite condensando"
+      },
+      {
+        "TituloIngrediente":"1 lata de creme de leite"
+      },
+      {
+        "TituloIngrediente":"1/2 xícara de suco de limão puro"
+      }
+    ]
+  },
+  {
+    "Titulo":"Brigadeiro",
+    "TempoPreparo":"25",
+    "Serve":30,
+    "Ingredientes":[
+      {
+        "TituloIngrediente":"1 caixa de leite condensado"
+      },
+      {
+        "TituloIngrediente":"1 colher (sopa) de margarina sem sal"
+      },
+      {
+        "TituloIngrediente":"7 colheres (sopa) de achocolatado"
+      },
+      {
+        "TituloIngrediente":"chocolate granulado"
+      }
+    ]
+  }
+]
+}
