@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 
     public void loadJSON(View v){
 
-        String listReceitas = Util.convertToReceita(Util.rawtoJason(getResources().openRawResource(R.raw.receitas))).toString();
+        String listReceitas = Util.jsonToListReceitas(Util.rawtoJason(getResources().openRawResource(R.raw.receitas))).toString();
         txReceitas.setText(listReceitas);
     }
 

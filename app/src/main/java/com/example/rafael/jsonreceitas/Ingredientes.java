@@ -9,6 +9,8 @@ public class Ingredientes {
 
     private String ingrediente;
 
+    public Ingredientes(){};
+
     public Ingredientes(String ingrediente) {
         this.ingrediente = ingrediente;
     }

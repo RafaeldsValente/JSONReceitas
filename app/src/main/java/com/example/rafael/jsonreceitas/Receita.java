@@ -10,17 +10,17 @@ public class Receita {
 
     private String tituloreceita;
     private String tempopreparo;
-    private int qtdpressos;
+    private int qtdpessoas;
     private List<Ingredientes> ingredientes;
 
 
     public Receita() {
     }
 
-    public Receita(String tituloreceita, String tempopreparo, int qtdpressos, List<Ingredientes> ingredientes) {
+    public Receita(String tituloreceita, String tempopreparo, int qtdpessoas, List<Ingredientes> ingredientes) {
         this.tituloreceita = tituloreceita;
         this.tempopreparo = tempopreparo;
-        this.qtdpressos = qtdpressos;
+        this.qtdpessoas = qtdpessoas;
         this.ingredientes = ingredientes;
     }
 
@@ -40,12 +40,12 @@ public class Receita {
         this.tempopreparo = tempopreparo;
     }
 
-    public int getQtdpressos() {
-        return qtdpressos;
+    public int getQtdpessoas() {
+        return qtdpessoas;
     }
 
-    public void setQtdpressos(int qtdpressos) {
-        this.qtdpressos = qtdpressos;
+    public void setQtdpessoas(int qtdpessoas) {
+        this.qtdpessoas = qtdpessoas;
     }
 
     public List<Ingredientes> getIngredientes() {
@@ -57,11 +57,11 @@ public class Receita {
     }
 
     public String toString() {
-        return "Receita{" +
-                "tituloreceita='" + tituloreceita + '\'' +
-                ", tempopreparo='" + tempopreparo + '\'' +
-                ", qtdpressos=" + qtdpressos +
-                ", ingredientes=" + ingredientes +
+        return "Receitas :\n" +
+                "Titulo = " + tituloreceita + "\n" +
+                "Tempo de Preparo ='" + tempopreparo + "\n" +
+                "Pessoas = " + qtdpessoas + "\n" +
+                "Ingredientes = " + ingredientes +
                 '}';
     }
 }
