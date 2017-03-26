@@ -85,41 +85,4 @@ public class Util {
 
     }
 
-    public static ArrayList<Receita> convertToReceita(String arquivoJson){
-
-        ArrayList<Receita> receitas = null;
-
-        try {
-            receitas = new ArrayList<Receita>();
-            List<Ingredientes>listIngredientes = new ArrayList<>();
-            JSONObject objetoJson = new JSONObject(arquivoJson);
-
-
-            JSONArray receitasJSON = objetoJson.getJSONArray("Receitas");
-
-            for (int i = 0; i < receitasJSON.length(); i++){
-
-                JSONObject objetoReceitasJson = receitasJSON.getJSONObject(i);
-                String tituloReceita = objetoJson.getString("Titulo");
-                String tempoPreparo = objetoJson.getString("TempoPreparo");
-                Integer qtdPessoas = objetoJson.getInt("Serve");
-                JSONArray ingredientes = objetoJson.getJSONArray("Ingredientes");
-
-                for(int x = 0; x < ingredientes.length(); x++){
-                    String ingrediente = objetoReceitasJson.getString("TituloIngrediente");
-                    listIngredientes.add(new Ingredientes(ingrediente));
-                }
-
-                receitas.add(new Receita(tituloReceita,tempoPreparo,qtdPessoas,listIngredientes));
-            }
-
-        }catch (JSONException e){
-            e.printStackTrace();
-            return null;
-        }
-
-        return receitas;
-
-    }
-
 }
